@@ -2,6 +2,9 @@
  Uses Excel data to automatically populate a Word template and send emails.
 
 
+## Workflow Diagram
+
+```mermaid
 stateDiagram-v2
     Start_Program --> Select_Excel_DATABASE(.xlsx)
     Select_Excel_DATABASE(.xlsx) --> ProcessData : Success
@@ -23,7 +26,6 @@ stateDiagram-v2
 
     Convert_To_PDF --> End_program : Error Occurred
     Attach_PDF_file_to_Outlook --> End_program : Error Occurred
-
 
 
 
